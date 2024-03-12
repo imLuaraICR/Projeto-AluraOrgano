@@ -1,0 +1,18 @@
+.list {
+    margin: 24px 0;
+}
+
+.list label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.list select {
+    border: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 10px;
+}
