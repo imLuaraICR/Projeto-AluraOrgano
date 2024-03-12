@@ -15,4 +15,11 @@
     font-size: 16px;
     padding: 16px;
     border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.input-text input:focus{
+    outline: 1px solid #6278F7;
+    box-shadow: 10px 10px 30px rgba(148, 129, 255, 0.2);
+    
 }

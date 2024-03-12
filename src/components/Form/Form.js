@@ -7,16 +7,6 @@ import { useState } from "react";
 
 function Form(props) {
 
-    const times = [
-        "Programação",
-        "Front-End",
-        "Data Science",
-        "DevOps",
-        "UX e Design",
-        "Mobile",
-        "Inovação e Gestão"
-    ]
-
     const [cargo, setCargo] = useState('')
     const [img, setImg] = useState('')
     const [nome, setNome] = useState('')
@@ -39,7 +29,7 @@ function Form(props) {
                 <InputText valor={nome} aoAlterado={valor => setNome(valor)} obrigatorio={true} label="Nome" placeholder="Digite seu nome" />
                 <InputText valor={cargo} aoAlterado={valor => setCargo(valor)} obrigatorio={true} label="Cargo" placeholder="Digite seu cargo" />
                 <InputText valor={img} aoAlterado={valor => setImg(valor)} obrigatorio={true} label="Imagem" placeholder="Digite o endereço da imagem" />
-                <List valor={time} aoAlterado={valor => setTime(valor)} label="Time" itens={times} />
+                <List valor={time} aoAlterado={valor => setTime(valor)} label="Time" itens={props.times} />
                 <Button txt="Criar card" />
             </form>
         </section>

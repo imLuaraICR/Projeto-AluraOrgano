@@ -2,10 +2,21 @@
     text-align: center;
     padding: 5%;
     align-items: center;
+    transition: all ease 0.2s;
 }
 
 .team-section h3{
     display: inline-block;
     font-size: 24px;
     padding-bottom: 8px;
+}
+
+.team-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    gap: 50px;
+    flex-wrap: wrap;
+    transition: all ease 0.2s;
 }
