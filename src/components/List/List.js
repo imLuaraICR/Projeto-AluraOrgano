@@ -5,7 +5,7 @@ const List = (props) => {
     return (
         <div className="list">
             <label>{props.label}</label>
-            <select>
+            <select onChange={event => props.aoAlterado(event.target.value)} required={props.required}>
                 {props.itens.map(item=>{
                     return <option key={item}>{item}</option>
                 })}
