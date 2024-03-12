@@ -3,6 +3,7 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import Form from './components/Form/Form';
 import Team from './components/Team/Team';
+import Rodape from './components/Rodape/Rodape';
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
         corSecundaria={time.corSecundaria}
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
       />)}
+      <Rodape/>
     </div>
   );
 }

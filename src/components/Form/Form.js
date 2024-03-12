@@ -20,6 +20,10 @@ function Form(props) {
             img,
             time
         })
+        setNome('');
+        setCargo('');
+        setTime('');
+        setImg('');
     }
 
     return (
