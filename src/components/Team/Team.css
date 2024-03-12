@@ -1,0 +1,11 @@
+.team-section{
+    text-align: center;
+    padding: 5%;
+    align-items: center;
+}
+
+.team-section h3{
+    display: inline-block;
+    font-size: 24px;
+    padding-bottom: 8px;
+}

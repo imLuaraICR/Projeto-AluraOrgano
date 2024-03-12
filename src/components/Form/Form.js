@@ -5,7 +5,7 @@ import List from "../List/List";
 import "./Form.css";
 import { useState } from "react";
 
-function Form() {
+function Form(props) {
 
     const times = [
         "Programação",
@@ -24,7 +24,12 @@ function Form() {
 
     const adSave = (event) => {
         event.preventDefault();
-        alert("Form foi enviado! =>", nome, cargo, img);
+        props.aoColaborador({
+            nome,
+            cargo,
+            img,
+            time
+        })
     }
 
     return (
