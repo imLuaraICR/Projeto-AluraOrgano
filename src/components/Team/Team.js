@@ -10,6 +10,7 @@ const Team = (props) => {
             <h3 style={{ borderColor: props.corPrimaria, borderBottom: '4px solid' }}>{props.nome}</h3>
             <div className="team-cards">
                 {props.colaboradores.map(colaborador => <Card
+                corDeFundo={props.corPrimaria}
                     nome={colaborador.nome}
                     cargo={colaborador.cargo}
                     img={colaborador.img} />)}
